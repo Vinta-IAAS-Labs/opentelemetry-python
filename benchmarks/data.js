@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1607896154643,
+  "lastUpdate": 1607989560331,
   "repoUrl": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 -": [
@@ -238,6 +238,46 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00000629487830548487",
             "extra": "mean: 5.516946524032142 usec\nrounds: 121952"
+          }
+        ]
+      }
+    ],
+    "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "001163739d7cc09a26592b688f9880da02baf208",
+          "message": "Remove SDK dependency from auto-instrumentation (#1420)",
+          "timestamp": "2020-12-14T15:03:25-08:00",
+          "tree_id": "3a2c11fff71c03c32ec35d12b2a7e3336dd0c7f9",
+          "url": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python/commit/001163739d7cc09a26592b688f9880da02baf208"
+        },
+        "date": 1607989557712,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 28633.73074938345,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000028629270011750895",
+            "extra": "mean: 34.92384589184322 usec\nrounds: 4406"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 21465.943496111773,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000031938814597505184",
+            "extra": "mean: 46.585420304545885 usec\nrounds: 7880"
           }
         ]
       }
