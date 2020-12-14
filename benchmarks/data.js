@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1607989569575,
+  "lastUpdate": 1607989578575,
   "repoUrl": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 -": [
@@ -318,6 +318,46 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000027191402737396514",
             "extra": "mean: 72.20750011096452 usec\nrounds: 4501"
+          }
+        ]
+      }
+    ],
+    "OpenTelemetry Python Benchmarks - Python 3.9 - core": [
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "001163739d7cc09a26592b688f9880da02baf208",
+          "message": "Remove SDK dependency from auto-instrumentation (#1420)",
+          "timestamp": "2020-12-14T15:03:25-08:00",
+          "tree_id": "3a2c11fff71c03c32ec35d12b2a7e3336dd0c7f9",
+          "url": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python/commit/001163739d7cc09a26592b688f9880da02baf208"
+        },
+        "date": 1607989576036,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 21196.685725385647,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00009219553817148738",
+            "extra": "mean: 47.177186705295945 usec\nrounds: 4483"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 15932.08892190132,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000026132313248166206",
+            "extra": "mean: 62.76640840394337 usec\nrounds: 9067"
           }
         ]
       }
