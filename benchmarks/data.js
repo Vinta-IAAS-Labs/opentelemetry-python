@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1608114345191,
+  "lastUpdate": 1608114356887,
   "repoUrl": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 -": [
@@ -278,6 +278,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000031938814597505184",
             "extra": "mean: 46.585420304545885 usec\nrounds: 7880"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rob.knox.dev@gmail.com",
+            "name": "Rob Knox",
+            "username": "robwknox"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9cfe5559ce6c015eea04f66fb9a4ece596f775b3",
+          "message": "Adding support for array attributes to Zipkin exporter (#1285)",
+          "timestamp": "2020-12-15T20:38:24-08:00",
+          "tree_id": "e9a7b62d8a75ebd757b49b580a4debc56e5f8bd2",
+          "url": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python/commit/9cfe5559ce6c015eea04f66fb9a4ece596f775b3"
+        },
+        "date": 1608114356014,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 32262.694164573546,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000001066613976176662",
+            "extra": "mean: 30.9955515462829 usec\nrounds: 4850"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 24241.166697857527,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000002569700819386697",
+            "extra": "mean: 41.25213990168145 usec\nrounds: 7734"
           }
         ]
       }
