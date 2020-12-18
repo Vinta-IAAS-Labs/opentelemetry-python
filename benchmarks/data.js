@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1608334959444,
+  "lastUpdate": 1608335037567,
   "repoUrl": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 -": [
@@ -662,6 +662,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000054549539773116987",
             "extra": "mean: 49.629842227006186 usec\nrounds: 10363"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "christian.neumueller@dynatrace.com",
+            "name": "Christian Neumüller",
+            "username": "Oberon00"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "753ec6c272273c5d941d43ce836e304e23c75ad0",
+          "message": "Add some repr()s to basic trace types. (#1485)",
+          "timestamp": "2020-12-18T13:52:08-08:00",
+          "tree_id": "c25d2fbcc857820fbbb75daab2da9e013843299e",
+          "url": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python/commit/753ec6c272273c5d941d43ce836e304e23c75ad0"
+        },
+        "date": 1608335035870,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 32006.642263210724,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000011676772860575091",
+            "extra": "mean: 31.243514760979046 usec\nrounds: 4810"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 23976.239011299374,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000011315983980934102",
+            "extra": "mean: 41.707959264533784 usec\nrounds: 7831"
           }
         ]
       }
