@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1608490303327,
+  "lastUpdate": 1608490309088,
   "repoUrl": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 -": [
@@ -584,6 +584,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000008601532040613791",
             "extra": "mean: 62.548896804851125 usec\nrounds: 5446"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6f2b5ceefa87f443bf574eac7debe2b0e996e59d",
+          "message": "Deleting unused file (#1492)",
+          "timestamp": "2020-12-20T08:47:13-08:00",
+          "tree_id": "87105ad8d7516d10a729ab4afa1ab5d7ce66a2d7",
+          "url": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python/commit/6f2b5ceefa87f443bf574eac7debe2b0e996e59d"
+        },
+        "date": 1608490298633,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 16496.681901733187,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000016164493553937",
+            "extra": "mean: 60.61825074622656 usec\nrounds: 1005"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 11023.063981261834,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00003096363972277726",
+            "extra": "mean: 90.71887831730865 usec\nrounds: 5087"
           }
         ]
       }
