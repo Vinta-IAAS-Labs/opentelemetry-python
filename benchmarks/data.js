@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1609783039768,
+  "lastUpdate": 1609783052589,
   "repoUrl": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 -": [
@@ -1006,6 +1006,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000014430323696266244",
             "extra": "mean: 62.024154594492764 usec\nrounds: 5757"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "bd8db6e2a461d896c1c0556efd0f4b569106fa96",
+          "message": "Add protobuf via gRPC exporting support for Jaeger (#1471)",
+          "timestamp": "2021-01-04T09:13:16-08:00",
+          "tree_id": "ab66aeae2640c477e711409223dda795b083ee77",
+          "url": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python/commit/bd8db6e2a461d896c1c0556efd0f4b569106fa96"
+        },
+        "date": 1609783051353,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 15431.15464882226,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0001839407821637228",
+            "extra": "mean: 64.80396462596026 usec\nrounds: 1470"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 10903.544417940344,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0001361887110759772",
+            "extra": "mean: 91.71329630708266 usec\nrounds: 6689"
           }
         ]
       }
