@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1609803337592,
+  "lastUpdate": 1609803365734,
   "repoUrl": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 -": [
@@ -1310,6 +1310,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000002095070805201272",
             "extra": "mean: 75.37986067294774 usec\nrounds: 5261"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "90db9dc30609bd192976625465a37b0f5724e943",
+          "message": "Code cleanup (#1503)",
+          "timestamp": "2021-01-04T12:57:26-08:00",
+          "tree_id": "0833b716974d262754c863b9144afab251c26686",
+          "url": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python/commit/90db9dc30609bd192976625465a37b0f5724e943"
+        },
+        "date": 1609803364802,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 20619.253361819312,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00003474048745393168",
+            "extra": "mean: 48.49836133502781 usec\nrounds: 1738"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 14443.625582036675,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000017416267526161215",
+            "extra": "mean: 69.23469417842604 usec\nrounds: 6579"
           }
         ]
       }
