@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1609792569552,
+  "lastUpdate": 1609792582590,
   "repoUrl": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 -": [
@@ -1698,6 +1698,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0009599499691452649",
             "extra": "mean: 246.66909332585305 usec\nrounds: 5454"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "anton@ryzhov.me",
+            "name": "Anton Ryzhov",
+            "username": "anton-ryzhov"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "336af87a095deb46a0de8a9ef39b7f60c87e422c",
+          "message": "Recreate span on every run of a decorated function (#1451)",
+          "timestamp": "2021-01-04T10:05:15-08:00",
+          "tree_id": "9ff9e572cd69a4b7d44eda02d5b94817e12d3646",
+          "url": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python/commit/336af87a095deb46a0de8a9ef39b7f60c87e422c"
+        },
+        "date": 1609792581635,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 3226.540535500068,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00003588407368667257",
+            "extra": "mean: 309.9294705885399 usec\nrounds: 221"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 4602.241022073786,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0007861675210522365",
+            "extra": "mean: 217.28544750344184 usec\nrounds: 5848"
           }
         ]
       }
