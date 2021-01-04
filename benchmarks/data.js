@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1608490340856,
+  "lastUpdate": 1609783039768,
   "repoUrl": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 -": [
@@ -1390,6 +1390,46 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000020770417542338164",
             "extra": "mean: 66.99129862249764 usec\nrounds: 6098"
+          }
+        ]
+      }
+    ],
+    "OpenTelemetry Python Benchmarks - Python 3.5 - exporter": [
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "bd8db6e2a461d896c1c0556efd0f4b569106fa96",
+          "message": "Add protobuf via gRPC exporting support for Jaeger (#1471)",
+          "timestamp": "2021-01-04T09:13:16-08:00",
+          "tree_id": "ab66aeae2640c477e711409223dda795b083ee77",
+          "url": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python/commit/bd8db6e2a461d896c1c0556efd0f4b569106fa96"
+        },
+        "date": 1609783038831,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2421.633251169859,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000008816768372022341",
+            "extra": "mean: 412.9444454551131 usec\nrounds: 110"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 3250.361254264697,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0009482640929457549",
+            "extra": "mean: 307.6581099063778 usec\nrounds: 3967"
           }
         ]
       }
