@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1609997823771,
+  "lastUpdate": 1609997829682,
   "repoUrl": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 -": [
@@ -3414,6 +3414,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0012607412837817758",
             "extra": "mean: 294.9577790200011 usec\nrounds: 4204"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "eb7125d7a7fb42dde67088e055c6053ea6c103b2",
+          "message": "Pass OTLP metadata as tuple instead of string (#1507)",
+          "timestamp": "2021-01-06T21:14:55-08:00",
+          "tree_id": "661f947040e0d995d408e9069820b011ae28f561",
+          "url": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python/commit/eb7125d7a7fb42dde67088e055c6053ea6c103b2"
+        },
+        "date": 1609997825094,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 831.2006719317501,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0002370137961909634",
+            "extra": "mean: 1.2030789119502903 msec\nrounds: 159"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 3398.291937967336,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0013232983234635117",
+            "extra": "mean: 294.2654775558049 usec\nrounds: 5859"
           }
         ]
       }
