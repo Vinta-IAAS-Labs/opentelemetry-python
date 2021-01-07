@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1609997789562,
+  "lastUpdate": 1609997795833,
   "repoUrl": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 -": [
@@ -2686,6 +2686,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0008187105565813681",
             "extra": "mean: 233.09447279625869 usec\nrounds: 7113"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "eb7125d7a7fb42dde67088e055c6053ea6c103b2",
+          "message": "Pass OTLP metadata as tuple instead of string (#1507)",
+          "timestamp": "2021-01-06T21:14:55-08:00",
+          "tree_id": "661f947040e0d995d408e9069820b011ae28f561",
+          "url": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python/commit/eb7125d7a7fb42dde67088e055c6053ea6c103b2"
+        },
+        "date": 1609997788220,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2840.134395687627,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00012182033906135982",
+            "extra": "mean: 352.09601401904405 usec\nrounds: 214"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 3675.4608173672796,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0010010787194528624",
+            "extra": "mean: 272.0747274123566 usec\nrounds: 5855"
           }
         ]
       }
