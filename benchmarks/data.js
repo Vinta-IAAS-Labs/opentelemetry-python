@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1610494815488,
+  "lastUpdate": 1610494821406,
   "repoUrl": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 -": [
@@ -3138,6 +3138,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000025425981979236194",
             "extra": "mean: 69.66418901323216 usec\nrounds: 7063"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "db74594d93b7e42d26ed2061b7672d1ad823f30c",
+          "message": "Update default port for OTLP exporter to 4317 (#1516)",
+          "timestamp": "2021-01-12T12:14:49-08:00",
+          "tree_id": "319abf2aeb7c5ad6e78c5bf358e34232b37ca479",
+          "url": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python/commit/db74594d93b7e42d26ed2061b7672d1ad823f30c"
+        },
+        "date": 1610494810680,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 20060.508027306536,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00001581155168842663",
+            "extra": "mean: 49.84918620399799 usec\nrounds: 4726"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 13975.541113461144,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000661907699779771",
+            "extra": "mean: 71.55358006401677 usec\nrounds: 5939"
           }
         ]
       }
