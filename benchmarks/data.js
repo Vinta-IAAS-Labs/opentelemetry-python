@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1610661583914,
+  "lastUpdate": 1610661591395,
   "repoUrl": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 -": [
@@ -1268,6 +1268,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00002890366566003672",
             "extra": "mean: 92.84533857565094 usec\nrounds: 4451"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3d48ecda850d2a2a72ccc446618d7526db3fd3d2",
+          "message": "adding propagator to GH action (#1530)",
+          "timestamp": "2021-01-14T12:15:06-08:00",
+          "tree_id": "3706c17f1e2cb08d5100f4fd210bdcf6604eff3e",
+          "url": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python/commit/3d48ecda850d2a2a72ccc446618d7526db3fd3d2"
+        },
+        "date": 1610661570288,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 23490.92967699824,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000007088984924924664",
+            "extra": "mean: 42.56962213714241 usec\nrounds: 1310"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 15257.525642399181,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000009208843134136493",
+            "extra": "mean: 65.54142679735023 usec\nrounds: 6120"
           }
         ]
       }
