@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611012884024,
+  "lastUpdate": 1611012888263,
   "repoUrl": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 -": [
@@ -1878,6 +1878,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000035482563350430162",
             "extra": "mean: 52.17314115410681 usec\nrounds: 6964"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "89fb4e58d0c9d4b3192c91c3371b57007b2d2233",
+          "message": "Move jaeger propagator out of SDK (#1525)",
+          "timestamp": "2021-01-18T14:34:10-08:00",
+          "tree_id": "dbd3ed5648bccf69082094bcbff56adefd756ada",
+          "url": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python/commit/89fb4e58d0c9d4b3192c91c3371b57007b2d2233"
+        },
+        "date": 1611012885340,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 23748.22385849179,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00002811845431420872",
+            "extra": "mean: 42.10841223152881 usec\nrounds: 4660"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 16473.727439293267,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00005824442899085426",
+            "extra": "mean: 60.702716108729106 usec\nrounds: 8306"
           }
         ]
       }
