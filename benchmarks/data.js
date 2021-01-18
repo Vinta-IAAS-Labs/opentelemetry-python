@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611012871250,
+  "lastUpdate": 1611012875449,
   "repoUrl": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 -": [
@@ -2412,6 +2412,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000006346698311202748",
             "extra": "mean: 72.1590642655962 usec\nrounds: 5415"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "89fb4e58d0c9d4b3192c91c3371b57007b2d2233",
+          "message": "Move jaeger propagator out of SDK (#1525)",
+          "timestamp": "2021-01-18T14:34:10-08:00",
+          "tree_id": "dbd3ed5648bccf69082094bcbff56adefd756ada",
+          "url": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python/commit/89fb4e58d0c9d4b3192c91c3371b57007b2d2233"
+        },
+        "date": 1611012870714,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 24798.045582472303,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000006249239663206427",
+            "extra": "mean: 40.325758603606154 usec\nrounds: 2034"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 16031.134662302537,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000009454442448644885",
+            "extra": "mean: 62.37861642766407 usec\nrounds: 5089"
           }
         ]
       }
