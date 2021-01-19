@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611090249113,
+  "lastUpdate": 1611090254612,
   "repoUrl": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 -": [
@@ -5576,6 +5576,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0009005271291710399",
             "extra": "mean: 319.6986271407382 usec\nrounds: 4613"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d994e757cf4dd5a468fa688617f0de213c9c6139",
+          "message": "Adding opentelemetry-distro package and entrypoint (#1482)",
+          "timestamp": "2021-01-19T08:35:16-08:00",
+          "tree_id": "986c82341c8762c79c7a9188ad96e3f5a5bc7905",
+          "url": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python/commit/d994e757cf4dd5a468fa688617f0de213c9c6139"
+        },
+        "date": 1611090251683,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2435.294417587138,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000015577232026460555",
+            "extra": "mean: 410.62796874917024 usec\nrounds: 96"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 3149.618219102279,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0009282602144474954",
+            "extra": "mean: 317.49879840516843 usec\nrounds: 4013"
           }
         ]
       }
