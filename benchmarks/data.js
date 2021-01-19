@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611012945268,
+  "lastUpdate": 1611023816025,
   "repoUrl": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 -": [
@@ -4816,6 +4816,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0009432116804187479",
             "extra": "mean: 337.9099322139329 usec\nrounds: 3924"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lechen@microsoft.com",
+            "name": "Leighton Chen",
+            "username": "lzchen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5184c517605c298b333ed2e54d48c2c86439a693",
+          "message": "Add rationale document with versioning/releasing details (#1460)",
+          "timestamp": "2021-01-18T16:53:54-08:00",
+          "tree_id": "99c50a7179516269aa39a371ec1d98baf6ef6fce",
+          "url": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python/commit/5184c517605c298b333ed2e54d48c2c86439a693"
+        },
+        "date": 1611023814590,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 3218.963290139101,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00004139782867694999",
+            "extra": "mean: 310.6590258619529 usec\nrounds: 116"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 3992.3623116639988,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0008206269770155265",
+            "extra": "mean: 250.4782687378903 usec\nrounds: 5150"
           }
         ]
       }
