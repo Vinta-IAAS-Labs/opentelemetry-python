@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611090321008,
+  "lastUpdate": 1611110366220,
   "repoUrl": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 -": [
@@ -6834,6 +6834,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0011962398543451998",
             "extra": "mean: 252.84403154539115 usec\nrounds: 5928"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c750109dd75b03a9f91dacd1b66b2b8ee140ec0d",
+          "message": "Remove rate property setter from TraceIdRatioBasedSampler (#1536)",
+          "timestamp": "2021-01-19T15:29:02-08:00",
+          "tree_id": "4378974a917e9b5516014e9616da6b7156cd12fa",
+          "url": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python/commit/c750109dd75b03a9f91dacd1b66b2b8ee140ec0d"
+        },
+        "date": 1611110361990,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 971.839031309301,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000030894296188850464",
+            "extra": "mean: 1.0289769887640337 msec\nrounds: 178"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 3916.4101636222795,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0011853776895614503",
+            "extra": "mean: 255.3358709178464 usec\nrounds: 5818"
           }
         ]
       }
