@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611110393498,
+  "lastUpdate": 1611110411120,
   "repoUrl": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 -": [
@@ -2982,6 +2982,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00008614904835190686",
             "extra": "mean: 98.60615479633685 usec\nrounds: 5911"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c750109dd75b03a9f91dacd1b66b2b8ee140ec0d",
+          "message": "Remove rate property setter from TraceIdRatioBasedSampler (#1536)",
+          "timestamp": "2021-01-19T15:29:02-08:00",
+          "tree_id": "4378974a917e9b5516014e9616da6b7156cd12fa",
+          "url": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python/commit/c750109dd75b03a9f91dacd1b66b2b8ee140ec0d"
+        },
+        "date": 1611110408320,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 25521.81338642388,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000006522055527653757",
+            "extra": "mean: 39.18216879259614 usec\nrounds: 2038"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 17116.648209156418,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000009080128876451978",
+            "extra": "mean: 58.42265306738371 usec\nrounds: 3260"
           }
         ]
       }
