@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611110531993,
+  "lastUpdate": 1611187193885,
   "repoUrl": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 -": [
@@ -5078,6 +5078,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0009359254467525721",
             "extra": "mean: 341.13738966008316 usec\nrounds: 4971"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1d39f7f819d652dd32eb066dd04bac5ae53b855d",
+          "message": "Fix TraceState to adhere to specs (#1502)",
+          "timestamp": "2021-01-20T09:22:57-08:00",
+          "tree_id": "462a0edc209417f4815d1ff1a599b1410ad6b25d",
+          "url": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python/commit/1d39f7f819d652dd32eb066dd04bac5ae53b855d"
+        },
+        "date": 1611187192509,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2717.486698333377,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000008378761731179842",
+            "extra": "mean: 367.9870818183934 usec\nrounds: 110"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 3684.4191611488745,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0008812876121774175",
+            "extra": "mean: 271.4132014469766 usec\nrounds: 4423"
           }
         ]
       }
