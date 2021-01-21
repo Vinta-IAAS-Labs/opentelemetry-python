@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611187204787,
+  "lastUpdate": 1611187217353,
   "repoUrl": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 -": [
@@ -5650,6 +5650,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0009405581377438095",
             "extra": "mean: 279.8089915718221 usec\nrounds: 5814"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1d39f7f819d652dd32eb066dd04bac5ae53b855d",
+          "message": "Fix TraceState to adhere to specs (#1502)",
+          "timestamp": "2021-01-20T09:22:57-08:00",
+          "tree_id": "462a0edc209417f4815d1ff1a599b1410ad6b25d",
+          "url": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python/commit/1d39f7f819d652dd32eb066dd04bac5ae53b855d"
+        },
+        "date": 1611187215608,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 3514.5929579447147,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000008282578656253591",
+            "extra": "mean: 284.52797008527165 usec\nrounds: 234"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 4669.955969730491,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0008380361706494758",
+            "extra": "mean: 214.13478124456734 usec\nrounds: 5705"
           }
         ]
       }
