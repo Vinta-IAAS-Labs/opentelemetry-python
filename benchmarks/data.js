@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611261523377,
+  "lastUpdate": 1611261539417,
   "repoUrl": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 -": [
@@ -7672,6 +7672,46 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 3.463825847292265e-7",
             "extra": "mean: 6.584455293148574 usec\nrounds: 67115"
+          }
+        ]
+      }
+    ],
+    "OpenTelemetry Python Benchmarks - Python 3.5 - propagator": [
+      {
+        "commit": {
+          "author": {
+            "email": "anton.ryzhov@zalando.de",
+            "name": "Anton Ryzhov",
+            "username": "anton-ryzhov"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b32365bf71a8a258e668bd81e90f158f2a88a4d7",
+          "message": "Allow to `start_as_current_span` with `end_on_exit=False` (#1519)",
+          "timestamp": "2021-01-21T10:01:46-08:00",
+          "tree_id": "8bdccaf49d5c64062a1ba7a787e890da2a104842",
+          "url": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python/commit/b32365bf71a8a258e668bd81e90f158f2a88a4d7"
+        },
+        "date": 1611261536764,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 44031.307325900125,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000009420576919812773",
+            "extra": "mean: 22.711113085933277 usec\nrounds: 6358"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 106349.4206010116,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00001972600405279902",
+            "extra": "mean: 9.402966131349924 usec\nrounds: 59524"
           }
         ]
       }
