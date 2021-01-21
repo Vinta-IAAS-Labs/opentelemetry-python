@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611261630439,
+  "lastUpdate": 1611261635247,
   "repoUrl": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 -": [
@@ -4848,6 +4848,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000033559588629584087",
             "extra": "mean: 59.44867050850445 usec\nrounds: 6334"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "anton.ryzhov@zalando.de",
+            "name": "Anton Ryzhov",
+            "username": "anton-ryzhov"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b32365bf71a8a258e668bd81e90f158f2a88a4d7",
+          "message": "Allow to `start_as_current_span` with `end_on_exit=False` (#1519)",
+          "timestamp": "2021-01-21T10:01:46-08:00",
+          "tree_id": "8bdccaf49d5c64062a1ba7a787e890da2a104842",
+          "url": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python/commit/b32365bf71a8a258e668bd81e90f158f2a88a4d7"
+        },
+        "date": 1611261630563,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 22852.568653208986,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000019605543701616043",
+            "extra": "mean: 43.75875706469342 usec\nrounds: 4388"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 16513.1554298755,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000001910335547939639",
+            "extra": "mean: 60.55777796355057 usec\nrounds: 5981"
           }
         ]
       }
