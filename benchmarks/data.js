@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611690287600,
+  "lastUpdate": 1611690297509,
   "repoUrl": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 -": [
@@ -6142,6 +6142,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0010268353332411515",
             "extra": "mean: 431.42163360771383 usec\nrounds: 2309"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "morgan_mclean@hotmail.com",
+            "name": "Morgan McLean",
+            "username": "mtwo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9077ce3c2f3682b7858f701c60a31f31ab692f27",
+          "message": "Add Zoom passcode (#1550)",
+          "timestamp": "2021-01-26T08:07:44-08:00",
+          "tree_id": "4dda91f98f42dc9d7056d847dbe80d254706ce04",
+          "url": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python/commit/9077ce3c2f3682b7858f701c60a31f31ab692f27"
+        },
+        "date": 1611690295828,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2212.408289571789,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000016035709524374897",
+            "extra": "mean: 451.9961368403433 usec\nrounds: 95"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 2895.1066762412743,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0009734451596380621",
+            "extra": "mean: 345.41041551474126 usec\nrounds: 3906"
           }
         ]
       }
