@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611633475233,
+  "lastUpdate": 1611633489855,
   "repoUrl": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 -": [
@@ -1914,6 +1914,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000001645533556882158",
             "extra": "mean: 75.78057384992286 usec\nrounds: 4543"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "39923391+hectorhdzg@users.noreply.github.com",
+            "name": "Hector Hernandez",
+            "username": "hectorhdzg"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0e0465824bf8804f29b3c57caec48791cf571007",
+          "message": "Make sure Resources follow semantic conventions (#1480)",
+          "timestamp": "2021-01-25T15:30:54-08:00",
+          "tree_id": "bb210ee6cefcd6d0d76eab3355b6f6e7984aa6c5",
+          "url": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python/commit/0e0465824bf8804f29b3c57caec48791cf571007"
+        },
+        "date": 1611633488723,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 20344.938794869853,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000019882140166786825",
+            "extra": "mean: 49.15227369728723 usec\nrounds: 1593"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 13904.661904226443,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000018887786315472647",
+            "extra": "mean: 71.91832544278127 usec\nrounds: 5365"
           }
         ]
       }
