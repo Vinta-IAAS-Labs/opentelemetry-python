@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611690362052,
+  "lastUpdate": 1611690369932,
   "repoUrl": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 -": [
@@ -2904,6 +2904,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00001143616736018778",
             "extra": "mean: 39.58560930228813 usec\nrounds: 8170"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "morgan_mclean@hotmail.com",
+            "name": "Morgan McLean",
+            "username": "mtwo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9077ce3c2f3682b7858f701c60a31f31ab692f27",
+          "message": "Add Zoom passcode (#1550)",
+          "timestamp": "2021-01-26T08:07:44-08:00",
+          "tree_id": "4dda91f98f42dc9d7056d847dbe80d254706ce04",
+          "url": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python/commit/9077ce3c2f3682b7858f701c60a31f31ab692f27"
+        },
+        "date": 1611690366878,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 22776.54575050745,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000015464471216332284",
+            "extra": "mean: 43.904813791956165 usec\nrounds: 4742"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 14931.391469860377,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000021998023022719244",
+            "extra": "mean: 66.97299458115077 usec\nrounds: 3322"
           }
         ]
       }
