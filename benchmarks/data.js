@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611775798541,
+  "lastUpdate": 1611775821852,
   "repoUrl": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 -": [
@@ -7856,6 +7856,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0009404658208519065",
             "extra": "mean: 385.7264049341857 usec\nrounds: 3729"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ewan.higgs@gmail.com",
+            "name": "Ewan Higgs",
+            "username": "ehiggs"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c026c0f6a53adae1af6cf36fb4bb830a31c6ffc9",
+          "message": "1542. Allow missing carrier headers to continue without raising AttributeError (#1545)",
+          "timestamp": "2021-01-27T08:31:32-08:00",
+          "tree_id": "cd2a50fa811d6310e1d6bf9b75512412d2a30766",
+          "url": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python/commit/c026c0f6a53adae1af6cf36fb4bb830a31c6ffc9"
+        },
+        "date": 1611775820200,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2624.4168075603848,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00014361335879679442",
+            "extra": "mean: 381.0370353974313 usec\nrounds: 113"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 3577.2527823962546,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0008671355003194926",
+            "extra": "mean: 279.5441252910679 usec\nrounds: 4294"
           }
         ]
       }
