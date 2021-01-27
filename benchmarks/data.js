@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611775843034,
+  "lastUpdate": 1611775849504,
   "repoUrl": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 -": [
@@ -6408,6 +6408,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0009734451596380621",
             "extra": "mean: 345.41041551474126 usec\nrounds: 3906"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ewan.higgs@gmail.com",
+            "name": "Ewan Higgs",
+            "username": "ehiggs"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c026c0f6a53adae1af6cf36fb4bb830a31c6ffc9",
+          "message": "1542. Allow missing carrier headers to continue without raising AttributeError (#1545)",
+          "timestamp": "2021-01-27T08:31:32-08:00",
+          "tree_id": "cd2a50fa811d6310e1d6bf9b75512412d2a30766",
+          "url": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python/commit/c026c0f6a53adae1af6cf36fb4bb830a31c6ffc9"
+        },
+        "date": 1611775845098,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 3005.4348115163098,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000020056181613494848",
+            "extra": "mean: 332.7305573783108 usec\nrounds: 122"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 4102.609325772249,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0007904761735801571",
+            "extra": "mean: 243.7473131351025 usec\nrounds: 5314"
           }
         ]
       }
