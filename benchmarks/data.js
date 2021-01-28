@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611872000353,
+  "lastUpdate": 1611872006557,
   "repoUrl": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 -": [
@@ -9914,6 +9914,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00002310838835722183",
             "extra": "mean: 8.676037218215882 usec\nrounds: 53764"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "18761d78e30a4293abd65a897129b57fbf0c0a15",
+          "message": "Update Resource merge key conflict precedence (#1544)",
+          "timestamp": "2021-01-28T09:20:50-08:00",
+          "tree_id": "aa5e34bdc6bcc45b3961ba96d824d9cefdeb6a26",
+          "url": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python/commit/18761d78e30a4293abd65a897129b57fbf0c0a15"
+        },
+        "date": 1611872005038,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 65599.30335112804,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000002885035533205114",
+            "extra": "mean: 15.244064325613058 usec\nrounds: 9141"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 146889.3210040947,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000001582598205315725",
+            "extra": "mean: 6.807846841174546 usec\nrounds: 54055"
           }
         ]
       }
