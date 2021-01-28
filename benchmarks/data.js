@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611872149277,
+  "lastUpdate": 1611872223312,
   "repoUrl": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 -": [
@@ -5112,6 +5112,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000018338315275372594",
             "extra": "mean: 9.52779195498536 usec\nrounds: 100000"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "18761d78e30a4293abd65a897129b57fbf0c0a15",
+          "message": "Update Resource merge key conflict precedence (#1544)",
+          "timestamp": "2021-01-28T09:20:50-08:00",
+          "tree_id": "aa5e34bdc6bcc45b3961ba96d824d9cefdeb6a26",
+          "url": "https://github.com/Vinta-IAAS-Labs/opentelemetry-python/commit/18761d78e30a4293abd65a897129b57fbf0c0a15"
+        },
+        "date": 1611872221241,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 203523.6748066394,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00005791819784467942",
+            "extra": "mean: 4.913433294431543 usec\nrounds: 144928"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 139656.1581740104,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000028387462665680542",
+            "extra": "mean: 7.160443284957105 usec\nrounds: 188680"
           }
         ]
       }
